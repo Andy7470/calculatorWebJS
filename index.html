@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<h1>Calculator</h1>
+
+	<div id="calc">
+		<input type="button" class="btn sign" id="clear" value="c" onclick="clearDisplay()">
+		<input type="text" id="display" disabled>
+		<br>
+		<input type="button" class="btn number" value="7" onclick="getValue(this.value)">
+		<input type="button" class="btn number" value="8" onclick="getValue(this.value)">
+		<input type="button" class="btn number" value="9" onclick="getValue(this.value)">
+		<input type="button" class="btn sign" value="+" onclick="getValue(this.value)">
+		<input type="button" class="btn sign" value="√" onclick="root()">
+		<br>
+		<input type="button" class="btn number" value="4" onclick="getValue(this.value)">
+		<input type="button" class="btn number" value="5" onclick="getValue(this.value)">
+		<input type="button" class="btn number" value="6" onclick="getValue(this.value)">
+		<input type="button" class="btn sign" value="*" onclick="getValue(this.value)">
+		<input type="button" class="btn sign" value="𝜋" onclick="getValue(Math.PI.toFixed(4))">
+		<br>
+		<input type="button" class="btn number" value="1" onclick="getValue(this.value)">
+		<input type="button" class="btn number" value="2" onclick="getValue(this.value)">
+		<input type="button" class="btn number" value="3" onclick="getValue(this.value)">
+		<input type="button" class="btn sign" value="-" onclick="getValue(this.value)">
+		<input type="button" class="btn sign" value="%" onclick="getValue(this.value)">
+		<br>
+		<input type="button" class="btn number" value="0" onclick="getValue(this.value)">
+		<input type="button" class="btn sign" value="." onclick="getValue(this.value)">
+		<input type="button" class="btn sign" value="/" onclick="getValue(this.value)">
+		<input type="button" class="btn equal" value="=" onclick="resolve()">
+	</div>
+	
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
